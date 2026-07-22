@@ -41,12 +41,12 @@
 - 提供结果表、主模型、敏感性分析、讨论/限制的待填模板；
 - 不假装读取数据、运行统计检验、生成真实样本量、效果量、置信区间、p 值或图表结果。
 
-## 发布后验收要求
+## HTTPS 冷安装与发布验收（已完成）
 
-完成远端发布后，必须重新进行以下检查，才可对外声称正式发布：
-
-1. 公开仓库、README、Release 标题、标签和原始安装链接均为 `research-assistance-skill` / “科研辅助 Skill”；
-2. 新建临时 Hermes Profile，从 GitHub HTTPS 原始链接安装；
-3. 安装器安全扫描与安装后审计均为 `SAFE / ALLOWED`；
-4. 无来源新会话仍拒绝伪造资料、作者实践、数据、统计结果或研究结论；
-5. 删除临时 Profile，并记录最终验证结果。
+- 公开仓库：`xyxw1234-bot/research-assistance-skill`。
+- 原始安装入口：`https://raw.githubusercontent.com/xyxw1234-bot/research-assistance-skill/main/SKILL.md`。
+- 新建隔离 Hermes Profile 后，已从该 HTTPS 链接安装 `research-assistance-skill v0.2.1`。
+- 安装器安全扫描为 `SAFE / ALLOWED`；安装后审计再次为 `SAFE / ALLOWED`。
+- 无论文、网页、作者主页、数据或实验结果的新会话明确标注“已核验证据：无”，拒绝伪造资料搜集结果、作者/团队实践、统计量、图表、模型结果、因果结论和方法优劣。
+- 临时 Profile 已删除；默认生产 Profile 与飞书网关未修改。
+- 公开主分支仅保留七个正式文件，旧产品名、旧标签、旧 Release 和旧公开提交历史均已清理。
